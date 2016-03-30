@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #808080;
+}
+.logo {
+  color: white;
+  padding: 5px 10px;
+  background-color: #29bdca;
+}
+.container {
+  padding: 0 100px;
+}
+ul.menu {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.social-list a {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 3px;
+}
+#contact-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+#contact-header > * {
+  margin-left: 20px;
+}
+#contact-header > a {
+  color: #29bdca;
+}
+#contact-header ul.social-list a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #808080;
+  background-color: #e5e5e5;
+}
+#main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 140px;
+}
+#main-nav > h1 a {
+  color: #454545;
+}
+#main-nav > ul.menu a {
+  margin: 0px 15px;
+}
+#breadcrumbs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 35px;
+  background-color: #2095a0;
+}
+#breadcrumbs-nav > ul.menu a {
+  margin: 0px 5px;
+}
+#breadcrumbs-nav > ul.menu > li:not(:last-child) > a {
+  color: white;
+}
+#breadcrumbs-nav > ul.menu > li:not(:last-child):after {
+  content: ">";
+  color: #454545;
+}
+#breadcrumbs-nav > ul.menu > li:last-child > a {
+  color: #29bdca;
+}
+#main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 145px;
+  background-color: #29bdca;
+}
+#main-header > * {
+  margin: 5px 0px;
+  color: white;
+}
+#gallery {
+  padding-top: 50px;
+}
+#filter {
+  display: flex;
+  padding: 5px;
+  background-color: #f2f2f2;
+}
+#filter a {
+  display: inline-block;
+  padding: 10px 15px;
+}
+#filter a.active-item {
+  color: white;
+  background-color: #29bdca;
+}
+#photos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px -35px;
+}
+#photos figcaption > h3 {
+  color: #29bdca;
+}
+#proposal-aside {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  background-color: #cbf1f4;
+}
+#proposal-aside > * {
+  margin: 0px 10px;
+}
+#proposal-aside span {
+  font-size: 1.5em;
+  color: #2095a0;
+}
+#proposal-aside button {
+  padding: 15px;
+  background-color: #2095a0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+}
+#find-us-aside {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+  background-color: #29bdca;
+}
+#find-us-aside span {
+  font-size: 1.7em;
+  color: white;
+}
+#find-us-aside ul.social-list a {
+  color: white;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  background-color: #2095a0;
+}
+#about-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #454545;
+}
+#about-footer > section {
+  margin: 50px 10px;
+  width: 350px;
+}
+#about-footer > section > h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+#about-footer > section > .about form {
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+#about-footer > section > .about form input,
+#about-footer > section > .about form button {
+  border-radius: 5px;
+}
+#about-footer > section > .tweet {
+  background-color: #333333;
+  padding: 10px;
+  margin: 10px 0px;
+}
+#about-footer > section > .tweet a {
+  display: block;
+  text-align: left;
+  color: #e5e5e5;
+}
+#about-footer > section > .tweet time {
+  display: block;
+  text-align: right;
+  color: #e5e5e5;
+}
+#about-footer > section > .post {
+  margin: 10px 0px;
+}
+#about-footer > section > .post p {
+  color: #e5e5e5;
+}
+#copyright-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+  min-height: 45px;
+}
+#copyright-footer > ul.menu a {
+  margin: 0px 10px;
+}
+#copyright-footer > span a {
+  color: white;
+}

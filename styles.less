@@ -1,0 +1,251 @@
+// Colors
+@grey_color1 : rgb(242, 242, 242); 
+@grey_color2 : rgb(229, 229, 229);
+@aqua_color1 : rgb(41, 189, 202);
+@aqua_color2 : rgb(32, 149, 160);
+@aqua_color3 : rgb(203, 241, 244);
+@text_color: rgb(128, 128, 128);
+@dark_color: rgb(69, 69, 69);
+@dark_color2: rgb(51, 51, 51);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: @text_color;
+}
+
+.logo {
+    color: white;
+    padding: 5px 10px;
+    background-color: @aqua_color1;
+}
+
+.container {
+    padding: 0 100px;
+}
+
+ul.menu {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.social-list a {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 3px;
+}
+
+#contact-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: @grey_color1;
+    > * {
+        margin-left: 20px;
+    }
+    > a {
+        color: @aqua_color1;
+    }    
+    ul.social-list a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        color: @text_color;
+        background-color: @grey_color2;
+    }    
+    
+}
+
+#main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 140px;
+    > h1 a {
+        color: @dark_color;
+    }
+    > ul.menu a {
+        margin: 0px 15px;
+    }
+}
+
+#breadcrumbs-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 35px;
+    background-color: @aqua_color2;
+    > ul.menu {
+        a {
+            margin: 0px 5px;
+        }
+        > li:not(:last-child) {
+            > a {
+                color: white;
+            }
+            &:after {
+                content: ">";
+                color: @dark_color;
+            }
+        }
+        > li:last-child > a {
+            color: @aqua_color1;
+        }
+    }
+}
+
+#main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 145px;
+    background-color: @aqua_color1;
+    > * {
+        margin: 5px 0px;
+        color: white;
+    }
+}
+
+#gallery {
+    padding-top: 50px;
+}
+
+#filter {
+    display: flex;
+    padding: 5px;
+    background-color: @grey_color1; 
+    a {
+        display: inline-block;
+        padding: 10px 15px;
+        &.active-item {
+            color: white;
+            background-color: @aqua_color1;
+        }
+    }
+}
+
+#photos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px -35px;
+    figcaption {
+        > h3 {
+            color: @aqua_color1;
+        }
+    }
+}
+
+#proposal-aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background-color: @aqua_color3;
+    > * {
+        margin: 0px 10px;
+    }
+    span {
+        font-size: 1.5em;
+        color: @aqua_color2;
+    }
+    button {
+        padding: 15px;
+        background-color: @aqua_color2;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        border-radius: 10px;
+    }
+}
+
+#find-us-aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    background-color: @aqua_color1;
+    span {
+        font-size: 1.7em;
+        color: white;
+    }
+    ul.social-list a {
+        color: white;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;        
+        background-color: @aqua_color2;
+    }
+}
+
+#about-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: @dark_color;
+    > section {
+        margin: 50px 10px;
+        width: 350px;
+        > h2 {
+           color: white;
+           margin-bottom: 30px; 
+        }
+        > .about {
+            form {
+                margin-top: 40px;
+                font-size: 1.5em;
+                input, button {
+                    border-radius: 5px;
+                }
+            }
+            
+        }
+        > .tweet {
+           background-color: @dark_color2; 
+           padding: 10px;
+           margin: 10px 0px;
+           a {
+               display: block;
+               text-align: left;
+               color: @grey_color2;
+           }
+           time {
+               display: block;
+               text-align: right;
+               color: @grey_color2;
+           }
+        }
+        > .post {
+            margin: 10px 0px;
+            p {
+                color: @grey_color2;
+            }
+        }
+    }
+}
+
+#copyright-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: @dark_color2;
+    min-height: 45px;
+    > ul.menu a {
+        margin: 0px 10px;
+    }
+    > span a {
+        color: white;
+    }
+}
